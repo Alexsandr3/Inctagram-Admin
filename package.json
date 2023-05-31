@@ -1,8 +1,8 @@
 {
   "name": "project-inctagram-admin",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "This is super admin server for project-inctagram",
+  "author": "Alex Bee",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -55,8 +55,8 @@
       "json",
       "ts"
     ],
-    "rootDir": "src",
-    "testRegex": ".*\\.spec\\.ts$",
+    "rootDir": ".",
+    "testRegex": ".*\\.*spec\\.ts$",
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
     },
@@ -65,5 +65,8 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "prisma": {
+    "schema": "prisma/schema.prisma"
   }
 }
